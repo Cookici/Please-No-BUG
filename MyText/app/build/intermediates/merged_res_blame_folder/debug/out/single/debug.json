@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_enroll.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\activity_enroll.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_select.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\drawable\\shape_select.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_item_rv.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\item_rv.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\MyText\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_one.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\fragment_one.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_account_circle_24.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\drawable\\ic_baseline_account_circle_24.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_visibility_off_24.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\drawable\\ic_baseline_visibility_off_24.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_two.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\fragment_two.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\xml_net_config.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\xml\\net_config.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_visibility_24.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\drawable\\ic_baseline_visibility_24.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_three.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\layout\\fragment_three.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\drawable_password.xml.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\drawable\\password.xml"
+    },
+    {
+        "merged": "E:\\MyText\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "E:\\MyText\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    }
+]
