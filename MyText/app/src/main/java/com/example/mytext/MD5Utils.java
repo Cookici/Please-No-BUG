@@ -14,9 +14,9 @@ public class MD5Utils {
             // result数组，digest.digest ( ); -> text.getBytes();
             // for 循环数组byte[] result;
             for (byte b : result) {
-                // 0xff 为16进制
+                // 0xff 16进制
                 int number = b & 0xff;
-                // number值 转换 字符串 Integer.toHexString( );
+                // 转换为字符串
                 String hex = Integer.toHexString(number);
                 if (hex.length() == 1) {
                     sb.append("0" + hex);
@@ -24,7 +24,6 @@ public class MD5Utils {
                     sb.append(hex);
                 }
             }
-            //sb StringBuffer sb = new StringBuffer();对象实例化
             return sb.toString();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();

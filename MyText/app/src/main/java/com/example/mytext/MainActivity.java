@@ -60,9 +60,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.vp2_one);
         tabLayout = findViewById(R.id.tb_one);
 
-        data.add("今天的新闻");
         data.add("今天的日记");
-        data.add("今天的美图");
 
         fragments.add(new FragmentOne());
         fragments.add(new FragmentTwo());

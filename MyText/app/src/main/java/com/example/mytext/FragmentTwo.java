@@ -164,14 +164,15 @@ public class FragmentTwo extends Fragment {
                         URL url = new URL(mUrl);
                         HttpURLConnection connection = (HttpURLConnection)
                                 url.openConnection();
-                        connection.setRequestMethod("GET");//设置请求方式为GET
-                        connection.setConnectTimeout(8000);//设置最大连接时间，单位为ms
-                        connection.setReadTimeout(8000);//设置最大的读取时间，单位为ms
+                        //get请求方法 网络请求
+                        connection.setRequestMethod("GET");
+                        connection.setConnectTimeout(8000);
+                        connection.setReadTimeout(8000);
                         connection.setRequestProperty("Accept-Language", "zhCN,zh;q=0.9");
                         connection.setRequestProperty("AcceptEncoding", "gzip,deflate");
-                        connection.connect();//正式连接
-                        InputStream in = connection.getInputStream();//从接口处获取
-                        String responseData = StreamToString(in);//这里就是服务器返回的
+                        connection.connect();
+                        InputStream in = connection.getInputStream();
+                        String responseData = StreamToString(in);
                         jsonDecodeTest(responseData);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -195,23 +196,23 @@ public class FragmentTwo extends Fragment {
 
 
     private String StreamToString(InputStream in) {
-        StringBuilder sb = new StringBuilder();//新建一个StringBuilder，用于一点一点
-        String oneLine;//流转换为字符串的一行
+        StringBuilder sb = new StringBuilder();
+        String oneLine;
         BufferedReader reader = new BufferedReader(new InputStreamReader(in));//
         try {
-            while ((oneLine = reader.readLine()) != null) {//readLine方法将读取一行
-                sb.append(oneLine).append('\n');//拼接字符串并且增加换行，提高可读性
+            while ((oneLine = reader.readLine()) != null) {
+                sb.append(oneLine).append('\n');
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
-                in.close();//关闭InputStream
+                in.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        return sb.toString();//将拼接好的字符串返回出去
+        return sb.toString();
     }
 
 
@@ -223,14 +224,14 @@ public class FragmentTwo extends Fragment {
                         URL url = new URL(mUrl);
                         HttpURLConnection connection = (HttpURLConnection)
                                 url.openConnection();
-                        connection.setRequestMethod("GET");//设置请求方式为GET
-                        connection.setConnectTimeout(8000);//设置最大连接时间，单位为ms
-                        connection.setReadTimeout(8000);//设置最大的读取时间，单位为ms
+                        connection.setRequestMethod("GET");
+                        connection.setConnectTimeout(8000);
+                        connection.setReadTimeout(8000);
                         connection.setRequestProperty("Accept-Language", "zhCN,zh;q=0.9");
                         connection.setRequestProperty("AcceptEncoding", "gzip,deflate");
-                        connection.connect();//正式连接
-                        InputStream in = connection.getInputStream();//从接口处获取
-                        String responseData = StreamToString(in);//这里就是服务器返回的
+                        connection.connect();
+                        InputStream in = connection.getInputStream();
+                        String responseData = StreamToString(in);
                         jsonDecodeTest1(responseData);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -266,14 +267,14 @@ public class FragmentTwo extends Fragment {
                         URL url = new URL(mUrl);
                         HttpURLConnection connection = (HttpURLConnection)
                                 url.openConnection();
-                        connection.setRequestMethod("GET");//设置请求方式为GET
-                        connection.setConnectTimeout(8000);//设置最大连接时间，单位为ms
-                        connection.setReadTimeout(8000);//设置最大的读取时间，单位为ms
+                        connection.setRequestMethod("GET");
+                        connection.setConnectTimeout(8000);
+                        connection.setReadTimeout(8000);
                         connection.setRequestProperty("Accept-Language", "zhCN,zh;q=0.9");
                         connection.setRequestProperty("AcceptEncoding", "gzip,deflate");
-                        connection.connect();//正式连接
-                        InputStream in = connection.getInputStream();//从接口处获取
-                        String responseData = StreamToString(in);//这里就是服务器返回的
+                        connection.connect();
+                        InputStream in = connection.getInputStream();
+                        String responseData = StreamToString(in);
                         jsonDecodeTest2(responseData);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -315,7 +316,7 @@ public class FragmentTwo extends Fragment {
         }
     }
 
-
+//截取当前屏幕 保存到相册
     private void popShotSrceenDialog() {
         final AlertDialog cutDialog = new AlertDialog.Builder(getContext()).create();
         View dialogView = View.inflate(getContext(), R.layout.show_cut_screen_layout, null);
@@ -324,8 +325,10 @@ public class FragmentTwo extends Fragment {
         int width = getActivity().getWindow().getDecorView().getRootView().getWidth();
         int height = getActivity().getWindow().getDecorView().getRootView().getHeight();
         //生成相同大小的图片
+
         Bitmap temBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        //找到当前页面的根布局,可以直接使用某个view的，截取的就是当前View的内容
+
+        //找到当前页面的根布局 截取当前View的内容
         View view = getActivity().getWindow().getDecorView().getRootView();//当前窗口布局
         //设置缓存
         view.setDrawingCacheEnabled(true);
@@ -370,7 +373,8 @@ public class FragmentTwo extends Fragment {
 
         final ContentValues values = new ContentValues();
         values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES
-                + File.separator + "winetalk"); //Environment.DIRECTORY_SCREENSHOTS:截图,图库中显示的文件夹名。"dh"
+                + File.separator + "winetalk");
+        //Environment.DIRECTORY_SCREENSHOTS:截图,图库中显示的文件夹名 "dh"
         values.put(MediaStore.MediaColumns.DISPLAY_NAME, mImageFileName);
         values.put(MediaStore.MediaColumns.MIME_TYPE, "image/png");
         values.put(MediaStore.MediaColumns.DATE_ADDED, mImageTime / 1000);
