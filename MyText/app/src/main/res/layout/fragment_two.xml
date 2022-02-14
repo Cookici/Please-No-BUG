@@ -56,49 +56,47 @@
             android:background="@color/white"
             android:id="@+id/et_content"
             android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_height="500dp"
             android:gravity="top"
             />
 
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-        <Button
-            android:text="生成日记"
-            android:background="@drawable/shape_select"
-                android:id="@+id/btn_get"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="5dp"
-            android:layout_marginTop="30dp"
-            />
+            >
+
+                <Button
+                    android:id="@+id/btn_get"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_select"
+                    android:text="生成日记" />
 
 
-        <Button
-            android:text="编辑日记"
-            android:background="@drawable/shape_select"
-                android:id="@+id/btn_edit"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            />
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_select"
+                    android:text="编辑日记" />
 
-        <Button
-            android:text="保存日记"
-            android:background="@drawable/shape_select"
-            android:id="@+id/btn_save"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            />
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/shape_select"
+                    android:text="保存日记" />
 
         </LinearLayout>
-
 
 
 </LinearLayout>
