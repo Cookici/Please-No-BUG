@@ -1,0 +1,100 @@
+ public void movePhoto() throws IOException {
+        String fromPath="\\data\\data\\com.example.mytext\\MyTextPhoto";
+        String toPath="E:\\MyText\\app\\src\\main\\res\\MyDrawable";
+        File srcFile = new File(fromPath);
+        File desFile = new File(toPath);
+
+
+        copyFolder(srcFile,desFile);
+
+
+        }
+
+    private void copyFolder(File srcFile,File desFile) throws IOException {
+        if(srcFile.isDirectory()){
+            String srcFileName = srcFile.getName();
+            File newFolder = new File(desFile,srcFileName);
+            if(!newFolder.exists()){
+                newFolder.mkdir();
+            }
+            File[] fileArray = srcFile.listFiles();
+            for(File file : fileArray){
+                copyFolder(file,newFolder);
+            }
+        }else {
+            File newFile = new File(desFile,srcFile.getName());
+            copyFile(srcFile,newFile);
+        }
+
+
+}
+
+    private void copyFile(File srcFile, File destFile) throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(srcFile));
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(destFile));
+
+        byte[] bys = new byte[1024];
+        int len;
+        while((len = bis.read(bys)) != -1){
+            bos.write(bys,0,len);
+            Log.d(TAG, "copyFile: yes");
+
+        }
+
+        bis.close();
+        bos.close();
+
+    }
+
+
+
+
+
+
+    //                Display display = getActivity().getWindowManager().getDefaultDisplay();
+    //                int w = display.getWidth();
+    //                int h = display.getHeight();
+    //
+    //                Bitmap bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+    //
+    //                //2.获取屏幕
+    //                View decorview = getActivity().getWindow().getDecorView();
+    //                decorview.setDrawingCacheEnabled(true);
+    //                bmp = decorview.getDrawingCache();
+    //
+    //                String savepath= "/data/data/com.example.mytext/MyTextPhoto";
+    //
+    //                    //3.保存bitmap
+    //                    i++;
+    //                    try {
+    //                        File path = new File(savepath);
+    //                        ;
+    //                        //文件
+    //                        String filepath = savepath + "/screen_" + i + ".png";
+    //
+    //                        File file = new File(filepath);
+    //
+    //                        if (!path.exists()) {
+    //                            path.mkdirs();
+    //                        }
+    //                        if (!file.exists()) {
+    //                            file.createNewFile();
+    //                        }
+    //
+    //
+    //                        FileOutputStream fos = null;
+    //
+    //                        fos = new FileOutputStream(file);
+    //
+    //                        if (null != fos) {
+    //                            bmp.compress(Bitmap.CompressFormat.JPEG, 90, fos);
+    //                            fos.flush();
+    //                            fos.close();
+    //                            Toast.makeText(getActivity(), "保存成功 截屏文件已保存至"+savepath+"下", Toast.LENGTH_SHORT).show();
+    //                        }
+    //
+    //
+    //                    } catch (Exception e) {
+    //                        e.printStackTrace();
+    //                    }
+    //                    decorview.setDrawingCacheEnabled(false);

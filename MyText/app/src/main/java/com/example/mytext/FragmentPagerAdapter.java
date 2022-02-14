@@ -21,11 +21,11 @@ public class FragmentPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new Fragment(R.layout.fragment_one);
+                return new FragmentOne();
             case 1:
-                return new Fragment(R.layout.fragment_two);
+                return new FragmentTwo();
             default:
-                return new Fragment(R.layout.fragment_three);
+                return new FragmentThree();
         }
     }
 

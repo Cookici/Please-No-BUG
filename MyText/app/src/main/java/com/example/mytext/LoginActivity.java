@@ -18,15 +18,15 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-
+    private CheckBox cb_remember;
     private Button btn_login;
     private Button btn_enroll;
     private EditText username;
     private EditText password;
     private ImageView iv_eye;
     private String userName,psw,spPsw;
-    private SharedPreferences preferences;
-    private SharedPreferences.Editor editor;
+    private SharedPreferences preferences,preferences1;
+    private SharedPreferences.Editor editor,editor1;
     private boolean isOpenEye = false;
 
 
@@ -34,10 +34,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         initHide();
         initView();
         ViewPassword();
         initEnroll();
+
+
     }
 
 
@@ -76,7 +79,6 @@ public class LoginActivity extends AppCompatActivity {
                     // md5Psw.equals(); 判断，输入的密码加密后，是否与保存在SharedPreferences中一致
                 }else if(md5Psw.equals(spPsw)){
 
-
                     //一致登录成功
                     Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                     //保存登录状态，在界面保存登录的用户名 定义个方法 saveLoginStatus boolean 状态 , userName 用户名;
@@ -86,6 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                     //登录成功后关闭此页面进入主页
                     Intent data=new Intent();
                     //data.putExtra( ); name , value ;
+
                     data.putExtra("isLogin",true);
                     //RESULT_OK为Activity系统常量，状态码为-1
                     // 表示此页面下的内容操作成功将data返回到上一页面，如果是用back返回过去的则不存在用setResult传递data值
@@ -109,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-    /**
+    /*
      *从SharedPreferences中根据用户名读取密码
      */
     private String readPsw(String userName){
@@ -119,9 +122,11 @@ public class LoginActivity extends AppCompatActivity {
         //sp.getString() userName, "";
         return sp.getString(userName , "");
     }
-    /**
+
+    /*
      *保存登录状态和登录用户名到SharedPreferences中
      */
+
     private void saveLoginStatus(boolean status,String userName){
         //saveLoginStatus(true, userName);
         //loginInfo表示文件名  SharedPreferences sp=getSharedPreferences("loginInfo", MODE_PRIVATE);
@@ -132,11 +137,13 @@ public class LoginActivity extends AppCompatActivity {
         editor.putBoolean("isLogin", status);
         //存入登录状态时的用户名
         editor.putString("loginUserName", userName);
-
         //提交修改
         editor.commit();
+
     }
-    /**
+
+
+    /*
      * 注册成功的数据返回至此
      * @param requestCode 请求码
      * @param resultCode 结果码
@@ -191,6 +198,7 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         iv_eye = (ImageView) findViewById(R.id.iv_eye);
+        cb_remember = (CheckBox) findViewById(R.id.cb_remember);
     }
 
     private void initHide() {
