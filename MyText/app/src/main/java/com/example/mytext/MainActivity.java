@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
         data.add("今天的日记");
 
         fragments.add(new FragmentOne());
-        fragments.add(new FragmentTwo());
-        fragments.add(new FragmentThree());
+//        fragments.add(new FragmentTwo());
+//        fragments.add(new FragmentThree());
 
         FragmentPagerAdapter adapter = new FragmentPagerAdapter(this, fragments);
 

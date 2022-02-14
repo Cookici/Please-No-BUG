@@ -19,14 +19,8 @@ public class FragmentPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        switch (position) {
-            case 0:
-                return new FragmentOne();
-            case 1:
+
                 return new FragmentTwo();
-            default:
-                return new FragmentThree();
-        }
     }
 
     @Override
